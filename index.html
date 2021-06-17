@@ -62,6 +62,7 @@
   }
   .card{
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    box-shadow:0 4px 8px #303030;
   }
   .card:hover{
      transform: scale(1.05);
@@ -163,6 +164,22 @@ input::placeholder {
 textarea::placeholder {
   color: white;
 }
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+.parallax{
+    /* Full height */
+    height: 100%;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
     </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -192,7 +209,6 @@ textarea::placeholder {
               <a class="dropdown-item" href="#appointment">2.Appointment</a>
             </div>
           </li>
-          
         </ul>
       </div>
     </div>
@@ -215,7 +231,9 @@ textarea::placeholder {
         <div class="col-sm-8">
           <h2>About Rajini advocate</h2><hr><br>
           <h4>Have you ever solved any problem <strong>Rapidly and Easily</strong>? Have you ever solved your problem in <strong>Low Cost</strong> ? Yes, In <strong><i>Rajini Advocate office </i></strong>you can solve your problem quickly and easily at low cost. Do you Want to know about his Office? Here we go.</h4><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Having <i>21 years</i> of <i>active experience</i> in his Advocate Profession, K Rajini is one of the<i> best Advocate in Vellore District of Tamil Nadu</i>. He completed <i>B.A, B.L, M.L </i>and hence, certified as a <i>Civil and Criminal</i> Advocate. 
+            He has managed <I>many types of cases </I>including <i>accidental and tax cases</i>. The clients are much <i>atisfied</i>s with his<i> hard work</i>. He has <a href='#portfolio  '>3 junior Advocates</a> to help him.
+            </p>
           <br><a class="btn btn-default btn-lg" href='#contact'>Get in Touch</a>
         </div>
         <div class="col-sm-4">
@@ -230,7 +248,7 @@ textarea::placeholder {
         </div>
         <div class="col-sm-8">
           <h2>Our Values</h2><br>
-          <h4><strong>THINKING:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+          <h4><strong>THINKING:</strong> Our main Idea is to satisfy clients. The clients are free enough to share their problems. The legal advice given by us, will satisfy our clients.</h4><br>
           <div><strong>Customer Satisfication: </strong>
             <div class='progress'>
               <div class='progress-bar progress-bar-striped' style='width:99%'>
@@ -250,12 +268,12 @@ textarea::placeholder {
         <div class="col-sm-6">
           <span class="glyphicon glyphicon-off logo-small"></span>
           <h4>24/7 work</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+          <p>We work every 24 hours</p>
         </div>
         <div class="col-sm-6">
           <span class="glyphicon glyphicon-lock logo-small"></span>
           <h4>JOB DONE</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+          <p>We will solve the problem quickly</p>
         </div>
       </div>
       <br><br>
@@ -263,12 +281,12 @@ textarea::placeholder {
         <div class="col-sm-6">
           <span class="glyphicon glyphicon-certificate logo-small"></span>
           <h4>CERTIFIED</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+          <p>We are well qualified to solve your problem</p>
         </div>
         <div class="col-sm-6">
           <span class="glyphicon glyphicon-wrench logo-small"></span>
           <h4 style="color:#303030;">HARD WORK</h4>
-          <p>Lorem ipsum dolor sit amet..</p>
+          <p>We do a lot of hard work</p>
         </div>
       </div>
     </div>   
@@ -283,7 +301,7 @@ textarea::placeholder {
             <div class="card-body">
               <h4 class="card-title">Rajini K</h4>
               <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-              <a href="about" class="btn btn-primary">See Profile</a>
+              <a href="#about" class="btn btn-primary">See Profile</a>
             </div>
           </div>
       </div>
@@ -293,7 +311,7 @@ textarea::placeholder {
         <div class="card-body">
           <h4 class="card-title">Mohan K</h4>
           <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-          <a href="about" class="btn btn-primary">See Profile</a>
+          <a href="#about" class="btn btn-primary">See Profile</a>
         </div>
       </div> 
   </div>    
@@ -303,7 +321,7 @@ textarea::placeholder {
       <div class="card-body">
         <h4 class="card-title">Andal</h4>
         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        <a href="about" class="btn btn-primary">See Profile</a>
+        <a href="#about" class="btn btn-primary">See Profile</a>
       </div>
     </div> 
 </div>  
@@ -313,7 +331,7 @@ textarea::placeholder {
       <div class="card-body">
         <h4 class="card-title">Kalaiyendri</h4>
         <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-        <a href="about" class="btn btn-primary">See Profile</a>
+        <a href="#about" class="btn btn-primary">See Profile</a>
       </div>
         </div> 
       </div>          <br> 
@@ -352,7 +370,7 @@ textarea::placeholder {
       </a>
     </div>
   </div>
-  <div id='appointment' class='text-center container-fluid'>
+  <div id='appointment' class='text-center container-fluid parallax'>
     <h2>Appointment</h2>
     <hr>
     <h4>Submit you Appointment</h4>
@@ -362,10 +380,15 @@ textarea::placeholder {
       <input type='number' style='background:none; color:white; border: 1px white solid; border-radius: 2px; padding:5px; margin:5px' placeholder="Contact number" class='col-sm-12'>
       <select class='btn' style='width:100%; margin: 5px;background:none; border: 1px white solid'>
         <option class='btn btn-info'>Choose Your Case Type</option>
-        <option class='btn btn-info'>dddd</option>
-        <option class='btn btn-info'>dddd</option>
+        <option class='btn btn-info'>Criminal Case</option>
+        <option class='btn btn-info'>Civil Case</option>
+        <option class='btn btn-info'>Family Case</option>
+        <option class='btn btn-info'>Accident Case</option>
+        <option class='btn btn-info'>Tax Case</option>
       </select>
       <textarea placeholder="Your Problem" class='col-sm-12'style='background:none; color:white; border: 1px white solid; border-radius: 2px; padding:5px; margin:5px' ></textarea>
+      <input type='date' style='background:none; color:white; border: 1px white solid; border-radius: 2px; padding:5px; margin:5px' placeholder="Name" class='col-sm-12'>
+            <input type='time' style='background:none; color:white; border: 1px white solid; border-radius: 2px; padding:5px; margin:5px' placeholder="Name" class='col-sm-12'>
       <button type='submit' class='btn btn-success' id='submit'>Submit</button>
     </form>
   </div>
@@ -373,11 +396,12 @@ textarea::placeholder {
     <h2 class="text-center">CONTACT</h2>
       <div class="col-sm-12 text-center">
         <p>Contact us and we'll get back to you within 24 hours.</p>
-        <p><span class="glyphicon glyphicon-map-marker"></span>9, Congress House Road, Gudiyatham, Tamil Nadu, India</p>
+        <p><span class="glyphicon glyphicon-map-marker"></span>9, Congress House Road, Pudupet, Gudiyatham, Tamil Nadu, India</p>
         <p><span class="glyphicon glyphicon-phone"></span> +91 9790087070</p>
         <p><span class="glyphicon glyphicon-envelope"></span><a href='mailto:adrajini7@gmail.com'>adrajini7@gmail.com</a></p>
       </div>
     </div>
+    <iframe width='100%'src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3979684985666!2d78.86988401434509!3d12.946367090872437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bad6d9b3b1eb475%3A0x5d823b32c90c68a3!2sRajini%20Advocate%20office!5e0!3m2!1sen!2sin!4v1623724818225!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     <Script>
       $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
